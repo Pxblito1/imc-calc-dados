@@ -3,10 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/algo/app/src/main/res/drawable/circulo.xml" value="0.2985" />
         <entry key="..\:/algo/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
         <entry key="..\:/algo/app/src/main/res/layout/fragment_calculadora.xml" value="0.358695652173913" />
         <entry key="..\:/algo/app/src/main/res/layout/fragment_dados.xml" value="0.358695652173913" />
         <entry key="..\:/algo/app/src/main/res/layout/fragment_imc.xml" value="0.358695652173913" />
+        <entry key="..\:/algo/app/src/main/res/layout/tabla.xml" value="0.358695652173913" />
+        <entry key="..\:/algo/app/src/main/res/menu/menu_barra.xml" value="0.365625" />
       </map>
     </option>
   </component>

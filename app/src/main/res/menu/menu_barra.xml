@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/opdado"
+        android:icon="@drawable/ic_baseline_videogame_asset_24"
+        android:title="Dado" />
+    <item
+        android:id="@+id/opdado1"
+        android:title="Calculadora" />
+    <item
+        android:id="@+id/opdado2"
+        android:icon="@drawable/ic_baseline_fastfood_24"
+        android:title="IMC" />
+</menu>

@@ -2,74 +2,105 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayoutMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="16dp"
     tools:context=".MainActivity">
 
     <SeekBar
-        android:id="@+id/sBaltura"
-        style="@style/Widget.AppCompat.SeekBar"
-        android:layout_width="263dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="78dp"
-        android:indeterminate="false"
+        android:id="@+id/skbWeight"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:max="150"
+        android:progress="75"
+        app:layout_constraintBottom_toBottomOf="@+id/tvweight"
+        app:layout_constraintEnd_toStartOf="@+id/tvWeightValue"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvweight"
+        app:layout_constraintTop_toTopOf="@+id/tvweight" />
+
+    <TextView
+        android:id="@+id/tvWeightValue"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="75/150"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/skbWeight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/skbWeight"
+        app:layout_constraintTop_toTopOf="@+id/skbWeight"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <TextView
+        android:id="@+id/tvweight"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="Peso"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/skbWeight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.173" />
+
+    <SeekBar
+        android:id="@+id/skbHeight"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="false"
         android:max="200"
-        android:progress="100"
+        android:min="100"
+        android:progress="150"
+        app:layout_constraintBottom_toBottomOf="@+id/tvHeight"
+        app:layout_constraintEnd_toStartOf="@+id/tvHeightValue"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvHeight"
+        app:layout_constraintTop_toTopOf="@+id/tvHeight"
+        app:layout_constraintVertical_bias="0.642" />
+
+    <TextView
+        android:id="@+id/tvHeightValue"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="150/200"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/skbHeight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/skbHeight"
+        app:layout_constraintTop_toTopOf="@+id/skbHeight" />
+
+    <TextView
+        android:id="@+id/tvHeight"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="Altura"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/skbHeight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <TextView
+        android:id="@+id/tvIMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="33.33"
+        android:textSize="96sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <SeekBar
-        android:id="@+id/sBpeso"
-        android:layout_width="263dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="36dp"
-        android:max="150"
-        android:progress="75"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sBaltura" />
-
-    <TextView
-        android:id="@+id/tvaltura"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="78dp"
-        android:layout_marginEnd="21dp"
-        android:text="Altura"
-        app:layout_constraintEnd_toStartOf="@+id/sBaltura"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tvpeso"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="46dp"
-        android:text="Peso"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvaltura" />
-
-    <TextView
-        android:id="@+id/tvalturaa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
-        android:layout_marginEnd="20dp"
-        android:text="100/200"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tvpesoo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="136dp"
-        android:layout_marginEnd="20dp"
-        android:text="000/150"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.367" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -80,20 +111,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499"
+        app:layout_constraintVertical_bias="0.402"
         app:srcCompat="@drawable/imc" />
-
-    <TextView
-        android:id="@+id/tvIMc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="96dp"
-        android:text="00.00"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
